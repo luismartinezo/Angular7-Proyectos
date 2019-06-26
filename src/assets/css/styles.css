@@ -1,0 +1,85 @@
+/* Reglas personalizadas que carga fuentes externas */
+@font-face {
+  font-family : 'Tangerine' , serif ;
+  src: url("https://fonts.googleapis.com/css?family=Tangerine");
+}
+body { font-family : 'Tangerine' , serif ;
+   }
+
+   /* Generales */
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  font-family: 'Tangerine', serif;
+  font-size: 16px;
+  background-image: url('../img/3.jpg');
+  background-attachment: fixed; /*Queda el fondo fijo al hacer scroll */
+}
+ /* Barra de navegacion / cabecera */
+ header{
+   display: block;
+   width: 100%;
+   height: 90px;
+   background: rgb(5, 166, 206);
+   position: fixed;
+   text-transform: uppercase;
+ }
+  header ul{
+    display: block;
+    width: 750px;
+    height: inherit;
+    margin: 0px auto;
+    margin-top: -3px;
+  }
+  /* ponemos el texto uno en seguida de otro */
+   header ul li{
+     display: inline-block;
+     margin: 0px auto;
+     text-align: center;
+     line-height: 90px;
+   }
+/* estilo para los enlaces de la cabecera */
+header a{
+  display: block;
+  padding-right: 20px;
+  padding-left: 20px;
+  height: inherit;
+  text-decoration: none;
+  color: white;
+  transition: all 300ms; /* Hace transicion cada vez que haga hover*/
+}
+header a:hover{
+  background: rgba(6, 43, 41, 0.425);
+}
+/* Quitamos el hover al titulo */
+header .logo a:hover{
+  background: transparent;
+  color: black;
+  transform: scale(1.50,1.50); /* Transforma el logo */
+}
+.logo{
+  font-family: 'Tangerine';
+  font-size: 30px;
+}
+.logo a{
+  transition: color 500ms, transform 500ms; /* pasamos la transformacion del logo */
+}
+ .clearfix{
+   float: none;
+   clear: both;
+ }
+
+ /* Estilos del contenedor principal */
+ #content{
+   padding-top: 120px;
+   min-height: 700px;
+   width: 75%;
+   margin: 0px auto;
+   box-shadow: 0px 0px 40px black;
+   background: rgb(255, 255, 255, 0.7);
+   border-right: 1px solid #b7b7b7;
+   border-left: 1px solid #b7b7b7;
+ }
