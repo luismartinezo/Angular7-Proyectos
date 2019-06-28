@@ -1,3 +1,60 @@
-<p>
-  crear-proyectos works!
-</p>
+<div class="container" *ngIf="proyecto">
+	<h2>{{titulo}}</h2>
+
+	<!-- <div class="message success" *ngIf="status == 'success'">
+		El proyecto se ha creado correctamente, puedes <a [routerLink]="['/proyecto', save_proyecto._id]">verlo aquí</a>
+	</div> -->
+
+	<!-- <div class="message failed" *ngIf="status == 'failed'">
+		El proyecto NO SE HA PODIDO CREAR
+	</div> -->
+
+	<form #proyectoForm="ngForm" (ngSubmit)="onSubmit(proyectoForm)">
+		<p>
+			<label for="name">Nombre</label>
+			<input type="text" name="name" #name="ngModel" [(ngModel)]="proyecto.name" required />
+			<span class="form_error" *ngIf="name.touched && !name.valid">
+				El nombre es obligatorio
+			</span>
+		</p>
+
+		<p>
+			<label for="description">Descripción</label>
+			<textarea name="description" #description="ngModel" [(ngModel)]="proyecto.description" required></textarea>
+			<span class="form_error" *ngIf="description.touched && !description.valid">
+				La descripción es obligatoria
+			</span>
+		</p>
+
+		<p>
+			<label for="category">Categoría</label>
+			<input type="text" name="category" #category="ngModel" [(ngModel)]="proyecto.category" required />
+			<span class="form_error" *ngIf="category.touched && !category.valid">
+				La categoría es obligatoria
+			</span>
+		</p>
+
+		<p>
+			<label for="year">Año de lanzamiento</label>
+			<input type="number" name="year" #year="ngModel" [(ngModel)]="proyecto.year" />
+		</p>
+
+		<p>
+			<label for="langs">Lenguajes utilizados</label>
+			<input type="text" name="langs" #langs="ngModel" [(ngModel)]="proyecto.langs" required />
+			<span class="form_error" *ngIf="langs.touched && !langs.valid">
+				Los lenguajes son obligatorios
+			</span>
+		</p>
+
+		<p>
+			<label for="image">Imagen del proyecto</label>
+			<span class="image" *ngIf="proyecto.image" style="float:none;">
+				<!-- <img src="{{url+'get-image/'+proyecto.image}}" style="width:100px;"/> -->
+			</span><br/>
+			<input type="file" name="image" placeholder="Subir imagen" />
+		</p>
+
+		<input type="submit" value="Enviar" [disabled]="!proyectoForm.form.valid" />
+	</form>
+</div>

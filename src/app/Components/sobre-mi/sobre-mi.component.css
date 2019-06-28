@@ -1,0 +1,42 @@
+ /* Estilos sobre mi */
+
+ #titulo {
+  width: 70%;
+  margin: 0px auto;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+
+#titulo h1 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 60px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+#titulo h2 {
+  font-size: 25px;
+  color: gray;
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+}
+article.sobre{
+  width: 70%;
+  margin: 0px auto;
+  margin-bottom: 20px;
+  font-size: 23px;
+}
+
+.sobre h2{
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+
+.sobre p{
+  padding-top: 20px;
+  padding-bottom: 30px;
+
+}

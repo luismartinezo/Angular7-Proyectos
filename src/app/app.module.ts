@@ -8,6 +8,8 @@ import { ContactoComponent } from './Components/contacto/contacto.component';
 import { ProyectosComponent } from './Components/proyectos/proyectos.component';
 import { CrearProyectosComponent } from './Components/crear-proyectos/crear-proyectos.component';
 import { ErrorComponent } from './Components/error/error.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { ErrorComponent } from './Components/error/error.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

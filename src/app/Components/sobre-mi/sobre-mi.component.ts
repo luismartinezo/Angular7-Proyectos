@@ -7,7 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SobreMiComponent implements OnInit {
 
-  constructor() { }
+  titulo: string;
+  subtitulo: string;
+  web: string;
+  constructor() {
+    this.titulo = 'LUIS MARTINEZ';
+    this.subtitulo = 'Desarrollador';
+    this.web = 'luismartinezo.info';
+  }
 
   ngOnInit() {
   }

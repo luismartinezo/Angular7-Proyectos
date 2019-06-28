@@ -3,6 +3,14 @@
   font-family : 'Tangerine' , serif ;
   src: url("https://fonts.googleapis.com/css?family=Tangerine");
 }
+@font-face {
+  font-family: 'Play', sans-serif;
+  src: url("https://fonts.googleapis.com/css?family=Play&display=swap");
+}
+@font-face {
+  font-family: 'Lobster', cursive;
+  src: url("../fonts/Lobster/Lobster-Regular.ttf");
+}
 body { font-family : 'Tangerine' , serif ;
    }
 
@@ -51,20 +59,25 @@ header a{
   color: white;
   transition: all 300ms; /* Hace transicion cada vez que haga hover*/
 }
-header a:hover{
+/* marca como activo el enlace */
+header a:hover,
+.actived{
   background: rgba(6, 43, 41, 0.425);
+  text-decoration: none;
+  color: #272222;
+  font-weight: bold;
 }
 /* Quitamos el hover al titulo */
-header .logo a:hover{
+header #logo a:hover{
   background: transparent;
   color: black;
   transform: scale(1.50,1.50); /* Transforma el logo */
 }
-.logo{
-  font-family: 'Tangerine';
+#logo{
+  font-family: 'Lobster Two', cursive;
   font-size: 30px;
 }
-.logo a{
+#logo a{
   transition: color 500ms, transform 500ms; /* pasamos la transformacion del logo */
 }
  .clearfix{
@@ -83,3 +96,14 @@ header .logo a:hover{
    border-right: 1px solid #b7b7b7;
    border-left: 1px solid #b7b7b7;
  }
+
+ /* Estilos del pie de pagina */
+
+ footer {
+   width: 75%;
+   margin: 0px auto;
+   padding-top: 15px;
+   color: rgb(227, 255, 248);
+ }
+
+
