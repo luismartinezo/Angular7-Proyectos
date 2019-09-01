@@ -1,27 +1,18 @@
-# Proyectos
+# Proyectos o Portafolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
+Este proyecto ha sido generado con [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
+Proyecto donde podemos crear un ejemplo de portafolio 
+- Creando proyectos nuevos para mostrar donde subimos y mostramos la imagen del mismo.
+- Un perfil o sobre para mostrar informacion.
+- Sesion de contacto.
 
-## Development server
+## Servidor de Desarrollo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Primero las dependencias de desarrollo del proyecto con el comando `npm install` 
+luego corremos `ng serve` para el servidor de desarrollo. Navega a `http://localhost:4200/`. La aplicacion se cargara automatica si detecta un cambio en los archivos.
 
-## Code scaffolding
+## Construcion para Produccion
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Correr `ng build` para construir el proyecto. todo este se almacenara en una carpeta llamada `dist/` . Usa el `--prod` para la construcion a produccion.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
